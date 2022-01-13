@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Calvin Hill</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- <p id="lblGreetings"></p> -->
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!--  Intro -->
+					<div id="intro">
+						<h1 id="lblGreetings"></h1>
+						<p>Welcome to my website!</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Posts -->
+							<section class="align-center">
+								<article>
+									<header>
+										<h2><a href="#">About Me<br /></a></h2>
+									</header>
+									<a href="#" class="align-center"><img src="images/IMG_8296.jpg" alt="" /></a>
+									<p>My name is Calvin Hill and I work as a Business Analyst for Sentara Healthcare. 
+										This is my first semester as a graduate student studying Data Science & Analytics. 
+										Through this program, I look forward to enhancing my data 
+										and analytics knowledge and growing my career.
+										I love traveling with my wife, reading, good food, technology and sports. 
+										My favorite teams are the Lakers, Tarheels, and Cowboys.</p>
+									<ul class="actions special">
+										<li><a href="Calvin_Hill_Resume.pdf" download="Calvin_Hill_Resume.pdf" class="button">Resume</a></li>
+									</ul>
+								</article>
+							</section>
+
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Calvin Hill</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				var myDate = new Date();
+				var hrs = myDate.getHours();
+			
+				var greet;
+			
+				if (hrs < 12)
+					greet = 'Good Morning';
+				else if (hrs >= 12 && hrs <= 17)
+					greet = 'Good Afternoon';
+				else if (hrs >= 17 && hrs <= 24)
+					greet = 'Good Evening';
+			
+				document.getElementById('lblGreetings').innerHTML =
+					'<b>' + greet + "<br /></b> I'm Calvin";
+			</script>
+
+	</body>
+</html>
